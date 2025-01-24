@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: beige;
+}
+
+button{
+    border: none;
+    border-radius: 20px;
+    box-shadow: 2px 4px 10px rgba(46, 46, 49, 0.389);
+    color: black;
+    padding: 15px 32px;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+}
+
+button:hover{
+    background-color: lightblue;
+}
+
+h1, h2{
+    padding: 20px;
+}
+
+a.scroll{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+}
+a.scroll:hover{
+    color: blue;
+}
+
+a.top{
+    position: fixed;
+    height: auto;
+    width: 50px;
+    margin: 50px;
+    padding: 50px;
+}
+
+header{
+    display: grid;
+    background-color: wheat;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    position: relative;
+    margin: 0 auto;
+
+}
+
+.grid-item{
+    min-width: 50%;
+    background-color: white;
+    height: fit-content;
+}
+
+.grid-item img {
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax);
+}
+
+@media screen and (min-width:0px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media screen and (min-width:1024px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width:2048px) {
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+html {
+    scroll-behavior: smooth;
+    text-align: center;
+}

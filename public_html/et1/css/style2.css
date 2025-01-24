@@ -1,0 +1,40 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    text-align: center;
+}
+
+section img {
+    width: 50%;
+    height: auto;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+#gallery {
+    background-color: beige;
+    display: grid;
+    gap: .4cm;
+}
+
+@media screen and (min-width: 450px) {
+    #gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #gallery {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+p{
+    padding: 10px;
+}

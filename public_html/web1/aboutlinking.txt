@@ -1,0 +1,7 @@
+./ = in current folder
+../ = exit current folder (go to parent folder)
+/ = utmost root folder or root level of domain
+
+file:/// = browse files & folders offline (works in Chrome)
+http:// = open ext. web address
+https:// = open ext. web address with SSL encryption

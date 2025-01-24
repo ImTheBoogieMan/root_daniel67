@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+h1{
+    color: lightcoral;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 25px;
+}
+
+h2{
+    color:coral;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+body{
+    background-color: aliceblue;
+    text-align: center;
+    padding: 5px;
+}
+
+li{
+    padding-top: 5px;
+    display: grid;
+}
+
+a.link{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:lightcoral;
+}
+a.link:hover{
+    color: orangered;
+}
+
+button{
+    margin: 30px;
+}

@@ -1,0 +1,22 @@
+*{
+    margin-top: 10px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    background-color: sandybrown;
+}
+
+li{
+    display: grid;
+}
+
+a.link{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: darkred;
+}
+a.link:hover{
+    color: salmon;
+}

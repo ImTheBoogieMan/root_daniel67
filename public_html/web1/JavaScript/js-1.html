@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js-Demo 1</title>
+    <style>
+        body{background-color: cadetblue;}
+    </style>
+</head>
+<body>
+    <h1>JavaScript Demo N#1</h1>
+
+    <audio src="sounds/Nom Nom Nom sound effect.mp3" controls></audio>
+    <br>
+    <button onclick="eatPizza()"> 🙂‍↔️🤪🥸🫨💩🦨🐀🗿🪫🚩🩼🦯🎳🍤🥔(w music taste)</button>
+    <button onclick="laufey()">For my Laufelys</button>
+    <main id="content"></main>
+
+<script>
+    alert("I wanna dance with somebody");
+    console.log("I found your location buddy :D");
+
+    // Variables
+    // dynamic variable toye "let" (data can be changed)
+        let myName = "Danny";
+        myName = "Manny";
+        console.log(myName);
+
+    // constant variable (data can't be changed)
+    const pi=3.143245;
+    console.log(pi*5);
+
+    //mixed message logging
+    //uses + to concatenate strings with other strings of data
+    //string = textual data, in quotes 
+    console.log("pi times 5:" + pi*5);
+
+    let mySound = new Audio("sounds/Rick Astley - Never Gonna Give You Up (Official Music Video).mp3");
+    let mySound2 = new Audio("sounds/Laufey - From The Start (Official Music Video).mp3")
+
+    const myContent=document.getElementById("content");
+
+    function eatPizza() {
+        //alert("Nomnomnom");
+        mySound.play();
+        myContent.innerHTML='<h2>gotcha lol</h2><img src="sounds/rick.jpeg">'
+    }
+    function laufey() {
+        //alert("Nomnomnom");
+        mySound2.play();
+        myContent.innerHTML='<h2>Shes so perfect BLAH BLAH BLAH OHHH!</h2><img src="sounds/laufey5.jpg">'
+    }
+</script>
+</body>
+</html>

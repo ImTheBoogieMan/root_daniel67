@@ -1,0 +1,50 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    text-align: center;
+}
+img{
+    width: 50%;
+    height: auto;
+}
+
+body{
+    background-color: aliceblue;
+}S
+
+p{
+    padding: 20px;
+}
+
+.resize{
+    width: 50%;
+    height: auto;
+    rotate: -90deg;
+}
+
+#resizeit{
+    width: 25%;
+    height: auto;
+}
+
+#gallery{
+    background-color: beige;
+    display: grid;
+    gap: 1.4cm;
+}
+
+@media screen and (min-width: 450px){
+    #gallery{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (min-width: 1500px){
+    #gallery{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
