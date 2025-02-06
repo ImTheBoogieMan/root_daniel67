@@ -8,3 +8,15 @@ body {
     text-align: center;
     padding: 20px;
 }
+#hat {
+    align-content: center;
+    position: absolute;
+    width: 10%;
+    height: auto;
+    right: 990px;
+    transition: all 2s ease-in;
+}
+
+#hat.slide-down{
+    transform: translateY(155px);
+}

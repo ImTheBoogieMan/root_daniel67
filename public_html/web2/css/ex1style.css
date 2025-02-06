@@ -9,3 +9,17 @@ body{
     text-align: center;
     padding: 20px;
 }
+
+a:link {
+    transition: color 1s;
+}
+
+img {
+    opacity: 0.25;
+    transition: opacity 500ms;
+    padding-top: 100px;
+}
+
+img:hover {
+    opacity: 1;
+}
