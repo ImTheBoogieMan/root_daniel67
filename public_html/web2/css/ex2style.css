@@ -10,13 +10,19 @@ body {
 }
 #hat {
     align-content: center;
-    position: absolute;
+    position: relative;
     width: 10%;
+    left:7%;
     height: auto;
-    right: 990px;
     transition: all 2s ease-in;
+    z-index: 1;
 }
 
-#hat.slide-down{
-    transform: translateY(155px);
+#platypus {
+    align-content: center;
+    position: relative;
+}
+
+#hat.slide {
+    transform: translateY(305%);
 }
