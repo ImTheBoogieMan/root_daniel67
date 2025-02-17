@@ -2,10 +2,13 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
+/*header stuff*/
+
 header{
-    background-color: black;
+    background-color: rgb(30, 30, 30);
 }
 
 #logo{
@@ -27,29 +30,71 @@ a.link{
     color: white;
     padding-left: 10px;
     padding-right: 10px;
+    transform: ;
 }
 
 a.link:hover{
     background-color: rgba(255, 255, 255, 0.5);
     padding: 10px;
     transition: all .2s;
+    color: black;
 }
+
+/*banner */
 
 img#banner{
     overflow: hidden;
     position: relative;
-    padding: 40px;
-    width: 50%;
-    animation: wavemaker 20s infinite;
+    width: 80%;
+    animation: wavemaker 30s infinite;
+    }
+
+    div#white{
+        background-color: rgb(253, 253, 253);
+        box-shadow: 1px -1px 5px rgba(46, 46, 49, 0.389);
     }
 
     @keyframes wavemaker {
         0% {
-            transform: translateX(-45vw);
+            transform: translateX(-55vw);
         }
 
         100% {
             transform: translateX(99vw);
         }
 
+    }
+
+    /*h1 & Section stuff*/
+
+    section#sqy{
+        background-color: bisque;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    h1.title{
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, bold;
+        color: rgb(40, 40, 40);
+        padding: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+/*Sub Categories Stuff*/
+
+    h2{
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-bottom: 5px;
+    }
+
+    p{
+    padding-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
     }
