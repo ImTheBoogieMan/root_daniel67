@@ -69,11 +69,19 @@ img#banner{
     /*h1 & Section stuff*/
 
     section.sqy{
-        background-color: bisque;
+        background-color: rgb(97, 63, 0);
+        margin-bottom: 20px;
+        padding: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    div.insidewhite{
+        background-color: rgb(253, 253, 253);
+        border-radius: 10px;
         margin-left: 20px;
         margin-right: 20px;
-        padding: 20px;
-        border-radius: 10px;
+        padding: 30px;
     }
 
     h1.title{
@@ -105,4 +113,16 @@ img#banner{
         width: 40%;
         padding-top: 20px;
         padding-left: 10px;
+    }
+
+    /* footer */
+    footer{
+        background-color: rgb(30, 30, 30);
+        padding: 20px;
+        text-align: center;
+    }
+    footer a{
+        text-decoration: none;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
