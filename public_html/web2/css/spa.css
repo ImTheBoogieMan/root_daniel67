@@ -45,8 +45,9 @@ a.link:hover{
 img#banner{
     overflow: hidden;
     position: relative;
-    width: 80%;
-    animation: wavemaker 30s infinite;
+    width: 30%;
+    animation: wavemaker 20s infinite alternate;
+    padding: 20px;
     }
 
     div#white{
@@ -56,18 +57,18 @@ img#banner{
 
     @keyframes wavemaker {
         0% {
-            transform: translateX(-55vw);
+            transform: translateX(0vw);
         }
 
         100% {
-            transform: translateX(99vw);
+            transform: translateX(71vw);
         }
 
     }
 
     /*h1 & Section stuff*/
 
-    section#sqy{
+    section.sqy{
         background-color: bisque;
         margin-left: 20px;
         margin-right: 20px;
@@ -91,10 +92,17 @@ img#banner{
         margin-left: 20px;
         margin-right: 20px;
         padding-bottom: 5px;
+        padding-top: 10px;
     }
 
     p{
-    padding-bottom: 20px;
     margin-left: 20px;
     margin-right: 20px;
+    }
+
+    img.right{
+        float: right;
+        width: 40%;
+        padding-top: 20px;
+        padding-left: 10px;
     }
