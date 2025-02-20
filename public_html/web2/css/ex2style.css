@@ -12,7 +12,6 @@ body {
     align-content: center;
     position: relative;
     width: 10%;
-    left:7%;
     height: auto;
     transition: all 2s ease-in;
     z-index: 1;
@@ -23,6 +22,30 @@ body {
     position: relative;
 }
 
-#hat.slide {
-    transform: translateY(305%);
+@media screen and (max-width:1344px) {
+    #hat.slide {
+transform: translateX(500%) translateY(-225px);
+    }
+    }
+@media screen and (min-width:1345px){
+    #hat.slide {
+        transform: translateX(335%) translateY(-225px);
+    }
+}
+
+#squat:hover{
+    transform: rotate(360deg);
+    transition: all 1s ease-in;
+}
+
+#violet{
+    margin: 114px;
+    width: 20%;
+    height: auto;
+}
+
+#violet:hover{
+    content: url(../images/Violet-bloated.webp);
+    transform: scale(200%);
+    transition: all 0.5s ease-in;
 }
