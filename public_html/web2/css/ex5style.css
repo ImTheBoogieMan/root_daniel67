@@ -3,6 +3,46 @@
     margin: 0;
     padding: 0;
 }
-svg {
-    width: 200vw;
+
+body{
+    overflow: hidden;
+    width: 175vw;
+}
+
+                        .cls-1 {
+                            fill: #61d9ff;
+                        }
+            
+                        .cls-2 {
+                            fill: #aad4ff;
+                        }
+            
+                        .cls-3 {
+                            fill: #61bdff;
+                        }
+            
+                        .cls-4 {
+                            fill: #619bff;
+                        }
+#Darkblue1 {
+animation: wavemaker 10s ease-in-out infinite alternate-reverse;
+}
+#blue2 {
+animation: wavemaker 10s ease-in-out infinite alternate;
+}
+#cyan3 {
+animation: wavemaker 10s ease-in-out infinite alternate-reverse;
+}
+#lightblue4 {
+animation: wavemaker 10s ease-in-out infinite alternate;
+}
+
+@keyframes wavemaker {
+    0% {
+        transform: translateX(-4vw);
+    }
+
+    100% {
+        transform: translateX(-50vw);
+    }
 }

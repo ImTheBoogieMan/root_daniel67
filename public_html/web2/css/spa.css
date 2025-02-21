@@ -30,7 +30,6 @@ a.link{
     color: white;
     padding-left: 10px;
     padding-right: 10px;
-    transform: ;
 }
 
 a.link:hover{
@@ -108,18 +107,43 @@ img#banner{
     margin-right: 20px;
     }
 
-    img.right{
+    img#right{
         float: right;
-        width: 30%;
+        width: 40%;
+        height: auto;
         padding-top: 20px;
         padding-right: 50px;
     }
 
     @media screen and (max-width:1024px) {
-            img.right {
+            img#right {
                 width: 60%;
                 padding-left: 10px;
             }
+    }
+
+    /* Scroll Wheel Personnel*/
+    section#Players {
+        text-align: center;
+        display: grid;
+        gap: 20px;
+        overflow: auto;
+        white-space: nowrap;
+        grid-template-columns: repeat(18, 1fr);
+        padding: 10px;
+    }
+
+    figure{
+    box-shadow: 5px 5px 10px;
+    }
+
+    figure img{
+        width: 175px;
+    }
+
+    figcaption{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 24px;
     }
 
     /* footer */
