@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BasketBall</title>
-    <link rel="stylesheet" href="../css/spa.css" />
+    <script src="../JavaScript/spa.js" defer></script>
+  <link rel="stylesheet" href="../css/spa.css" />
   </head>
   <header>
     <img id="logo" src="../../web1/img/Griffin.png" alt="" />
@@ -130,11 +131,26 @@
     </section>
 
     <h1 id="Strats" class="title">Basic Playbook</h1>
-    <section class="sqy">
-      <div class="insidewhite">
-        <h2>Offense</h2>
-      </div>
-    </section>
+        <section id="offense">
+          <ul class="sidenav select">
+            <a class="active pick">Offense</a>
+            <a id="1" class="pick up">Spain Pick & Roll</a>
+            <a id="2" class="pick up">Horns Set</a>
+            <a id="3" class="pick up">Quick Floppy</a>
+            <a id="4" class="pick up">Piston Elevator</a>
+            <a id="5" class="pick up">Pistol Action</a>
+          </ul>
+        </section>
+        <section id="defense">
+          <ul class="sidenav select">
+            <a class="active pick">Defense</a>
+            <a id="6" class="pick up">Box and One</a>
+            <a id="7" class="pick up">Triangle and Two</a>
+            <a id="8" class="pick up">3-2</a>
+            <a id="9" class="pick up">Full Court Press</a>
+            <a id="10" class="pick up">Man-Man</a>
+          </ul>
+        </section>
 
     <h1 id="Analysis" class="title">NBA Team Analysis</h1>
     <section class="sqy">
@@ -152,133 +168,137 @@
         </p>
         <h2>Personnel</h2>
         <section id="Players">
-          <figure>
+                        <!-- Next and previous buttons -->
+                        <a id="prev"><</a>
+                        <a id="next">></a>
+          <div id="move">
+          <figure class="mySlides fade">
             <img
               src="https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4397018.png&w=350&h=254"
               alt=""
             />
             <figcaption>Ochai Agbaji</figcaption>
           </figure>
-          <figure>
+          <figure class="mySlides fade">
             <img
               src="https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4433134.png&w=350&h=254"
               alt=""
             />
             <figcaption>Scottie Barnes</figcaption>
           </figure>
-          <figure>
+          <figure class="mySlides fade">
             <img
               src="https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4395625.png&w=350&h=254"
               alt=""
             />
             <figcaption>RJ Barrett</figcaption>
           </figure>
-          <figure>
+          <figure class="mySlides fade">
             <img
               src="https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4431893.png&w=350&h=254"
               alt=""
             />
             <figcaption>Jamison Battle</figcaption>
           </figure>
-          <figure>
+          <figure class="mySlides fade">
             <img
               src="https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3948153.png&w=350&h=254"
               alt=""
             />
             <figcaption>Chris Boucher</figcaption>
           </figure>
-          <figure>
+          <figure class="mySlides fade">
             <img
               src="https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/5211984.png&w=350&h=254"
               alt=""
             />
             <figcaption>Ulrich Chomche</figcaption>
           </figure>
-          <figure>
+          <figure class="mySlides fade">
             <img
               src="https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/5106258.png&w=350&h=254"
               alt=""
             />
             <figcaption>Gradey Dick</figcaption>
           </figure>
-          <figure>
+          <figure class="mySlides fade">
             <img
               src="https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3913176.png&w=350&h=254"
               alt=""
             />
             <figcaption>Brandon Ingram</figcaption>
           </figure>
-          <figure>
+          <figure class="mySlides fade">
             <img
               src="https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4067017.png&w=350&h=254"
               alt=""
             />
             <figcaption>A.J. Lawson</figcaption>
           </figure>
-          <figure>
+          <figure class="mySlides fade">
             <img
               src="https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/5107897.png&w=350&h=254"
               alt=""
             />
             <figcaption>Jonathan Mogbo</figcaption>
           </figure>
-          <figure>
+          <figure class="mySlides fade">
             <img
               src="https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4066410.png&w=350&h=254"
               alt=""
             />
             <figcaption>Eugene Omoruyi</figcaption>
           </figure>
-          <figure>
+          <figure class="mySlides fade">
             <img
               src="https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3134908.png&w=350&h=254"
               alt=""
             />
             <figcaption>Jakob Poeltl</figcaption>
           </figure>
-          <figure>
+          <figure class="mySlides fade">
             <img
               src="https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4395724.png&w=350&h=254"
               alt=""
             />
             <figcaption>Immanuel Quickley</figcaption>
           </figure>
-          <figure>
+          <figure class="mySlides fade">
             <img
               src="https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4397119.png&w=350&h=254"
               alt=""
             />
             <figcaption>Jared Rhoden</figcaption>
           </figure>
-          <figure>
+          <figure class="mySlides fade">
             <img
               src="https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4593049.png&w=350&h=254"
               alt=""
             />
             <figcaption>Orlando Robinson</figcaption>
           </figure>
-          <figure>
+          <figure class="mySlides fade">
             <img
               src="https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4432241.png&w=350&h=254"
               alt=""
             />
             <figcaption>Jamal Shead</figcaption>
           </figure>
-          <figure>
+          <figure class="mySlides fade">
             <img
               src="https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4023.png&w=350&h=254"
               alt=""
             />
             <figcaption>Garrett Temple</figcaption>
           </figure>
-          <figure>
+          <figure class="mySlides fade">
             <img
               src="https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4684272.png&w=350&h=254"
               alt=""
             />
             <figcaption>Ja'Kobe Walter</figcaption>
           </figure>
-        </section>
+            </section>
         <h2>Strengths</h2>
         <p>
           Analysing their roster construction, first thing that pops out is that
