@@ -15,7 +15,7 @@ productContainers.forEach((item, i) => {
 })
 
 /*Button Selectors*/
-const buttons = document.querySelectorAll('a')
+/*const buttons = document.querySelectorAll('a')
 const box = document.getElementsByClassName('up')
 
 function changeBox(e) {
@@ -53,3 +53,4 @@ function changeBox(e) {
 buttons.forEach(button => {
   button.addEventListener('click', e => changeBox(e))
 })
+*/
