@@ -14,6 +14,14 @@ productContainers.forEach((item, i) => {
     })
 })
 
+const sunny = document.getElementById("right");
+let mySound = new Audio("../images/MyLeBron.mp3")
+
+sunny.onclick = function () {
+    this.classList.toggle("sunshine");
+    mySound.play()
+}
+
 /*Button Selectors*/
 /*const buttons = document.querySelectorAll('a')
 const box = document.getElementsByClassName('up')
