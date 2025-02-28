@@ -18,8 +18,14 @@ const sunny = document.getElementById("right");
 let mySound = new Audio("../images/MyLeBron.mp3")
 
 sunny.onclick = function () {
-    this.classList.toggle("sunshine");
-    mySound.play()
+  this.classList.toggle("sunshine");
+  mySound.play();
+  setTimeout(done, 13500);
+}
+
+function done() {
+  var element = document.getElementById("right");
+  element.classList.remove("sunshine");
 }
 
 /*Button Selectors*/
