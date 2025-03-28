@@ -49,7 +49,7 @@ header {
 .subnav:hover .subnavbtn {
     background-color: #eee;
     color: black;
-    transition: ease-in 0.2s;
+    transition: ease-in 0.15s;
 }
 
 /* Style the subnav content - positioned absolute */
@@ -69,10 +69,10 @@ header {
     text-decoration: none;
 }
 
-/* Add a grey background color on hover */
+/* Add a black background color on hover */
 .subnav-content a:hover {
-    background-color: #eee;
-    color: black;
+    background-color: #333;
+    color: #eee;
 }
 
 /* When you move the mouse over the subnav container, open the subnav content */
