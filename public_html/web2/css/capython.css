@@ -2,4 +2,63 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    scroll-behavior: smooth;
+}
+
+/* Scroll Wheel Personnel*/
+section#Players {
+    position: relative;
+}
+
+div#move {
+    text-align: center;
+    display: grid;
+    overflow: hidden;
+    white-space: nowrap;
+    grid-template-columns: repeat(20, 1fr);
+    gap: 20px;
+    padding: 10px;
+}
+
+figure img {
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/*prev & next buttons*/
+#prev,
+#next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: -22px;
+    padding: 16px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 5px white;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.4s ease;
+    z-index: 8;
+}
+
+#prev {
+    left: 0;
+    border-radius: 3px 3px;
+}
+
+#next {
+    right: 0;
+    border-radius: 3px 3px;
+}
+
+#prev:hover,
+#next:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
 }
