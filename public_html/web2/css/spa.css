@@ -230,7 +230,6 @@ aside.logo{
 
         img#right{
             float: right;
-            width: 29%;
             height: auto;
             padding-top: 20px;
             padding-right: 50px;
@@ -289,19 +288,19 @@ aside.logo{
             transition: all .2s ease-in;
         }
 
-            @media screen and (max-width:844px) {
+            @media screen and (min-width:0px) {
             img#right {
                 width: 100%;
                 padding-left: 10px;
                 }
     }
-            @media screen and (max-width:1024px) {
+            @media screen and (min-width:844px) {
             img#right {
                 width: 60%;
                 padding-left: 10px;
                 }
     }
-            @media screen and (max-width:1805px) {
+            @media screen and (min-width:1024px) {
             img#right {
             width: 40%;
             padding-left: 10px;

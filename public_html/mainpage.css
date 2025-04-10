@@ -17,6 +17,8 @@ header {
 
 h1{
     padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: palevioletred;
 }
 
 /* The navigation menu */
@@ -56,7 +58,7 @@ h1{
 .navbar a:hover,
 .subnav:hover .subnavbtn {
     background-color: #eee;
-    color: black;
+    color: rgb(0, 0, 0);
     transition: ease-in 0.15s;
 }
 
@@ -73,13 +75,13 @@ h1{
 /* Style the subnav links */
 .subnav-content a {
     float: left;
-    color: black;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
 /* Add a black background color on hover */
 .subnav-content a:hover {
-    background-color: #333;
+    background-color: #333333;
     color: #eee;
 }
 
