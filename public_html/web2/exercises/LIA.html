@@ -1,47 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LIA</title>
     <link rel="stylesheet" href="../css/LIa.css">
+    <script src="../JavaScript/lia.js" defer></script>
 </head>
 <header>
-    <nav>
-        <div><a href="../">Back To Web 2</a></div>
-        <div><a href="#Back">Some Background</a></div>
-        <div><a href="#care">Precautions</a></div>
-        <div><a href="">Planning</a></div>
-        <div><a href="">Routes</a></div>
-        
+    <nav id="menu">
+        <a class="wow" href="#Back">Some Background</a>
+        <a class="wow" href="#care">Planning</a>
+        <a class="wow" href="#Pre">Precaution</a>
+        <a class="wow" href="#lane">Bike Lanes</a>
+
 
     </nav>
     <img id="logo" src="../images/NewBikeResized.png" alt="">
 </header>
+
 <body>
     <section>
-    <h1>Welcome to Cyclepedia</h1> <p class="text mid">This website is designed for bikers. Whether you are on training wheels or an avid biker,
-        this website is meant to act as a guide specifically for Montreal and the Greater Montreal area. This website will
-        contain everything that you will need to bike around Montreal. From learning how to bike up to showing you the bike
-        routes in Montreal, this website will cover all of your needs. Fear not, nothing written on this website is
-        considered illegal, nor dangerous. Everything is based off of legal sources.</p></section>
-    <section class="Place">
-        <h1>Some Background</h1>
-    <div class="content">
-    <article id="Back"> 
-    <p class="text">I have 8 years of long distance biking experience. I have gotten gravely hurt because of it and I experienced my best moment too. I
-    have always enjoyed biking and I do not plan on giving up on biking. I have biked to very far places, like Brossard,
-    Trois-Rivieres and Oka. Therefore, I think I am qualified to teach about the Do's and Dont's about biking. Although I am not a professional in any way, shape or form, I make it up with experience. </p></article>
-    <img src="../images/Brief.jpg" alt="">
-    </div>
+        <h1 class="top">Welcome to Cyclepedia</h1>
+        <p class="center">This website is designed for bikers. Whether you are on training wheels or an avid biker,
+            this website is meant to act as a guide specifically for Montreal and the Greater Montreal area. This
+            website will
+            contain everything that you will need to bike around Montreal. From learning how to bike up to showing you
+            the bike
+            routes in Montreal, this website will cover all of your needs. Fear not, nothing written on this website is
+            considered illegal, nor dangerous. Everything is based off of legal sources.</p>
     </section>
+    <br>
     <section class="Place">
-        <h1 id="care">Precautions</h1>
-        <div class="content">
-            <article class="Back">
-                <p>There are many safety precautions to take before heading out there on a bike</p>
-            </article>
+        <h1 id="Back" class="top">Some Background</h1>
+         <article class="content">
+                <p class="side">I have 8 years of long distance biking experience. I have gotten gravely hurt because of it
+                and I experienced my best moment too. I
+                have always enjoyed biking and I do not plan on giving up on biking. I have biked to very far places,
+                like Brossard,
+                Trois-Rivieres and Oka. Therefore, I think I am qualified to teach about the Do's and Dont's about
+                biking. Although I am not a professional in any way, shape or form, I make it up with experience. </p>
+            <img class="img" src="../images/Brief.jpg" alt="">
+        </article>
+    </section>
+
+    <section class="Place">
+        <h1 id="care" class="top">Planning</h1>
+        <article class="content">
+            <p class="center">There are many aspects to plan out before heading out there on a bike, like equipement, directions, etc.
+                The list below has everything that you need to prepare or at the very least consider before
+                going out there on a bike.</p>
+        </article>
+        <article id="Checkbox">
+            <br>
+            <h1>Dan's Checkbox</h1>
+            <br>
+        <div>
+            <h2>Equipement</h2>
+            <br>
+            <label class="container">Bike Helmet
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">Appropriate Clothes
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">Bike Pump
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">Water & Food
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">Bike Lock
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">Flashlight
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">Map
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+            </label>
         </div>
+        <div>
+            <br>
+            <h2>Preplanning</h2>
+            <br>
+            <label class="container">Check Tires for air
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">Check the weather
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">Dress Accordingly
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">Distance
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">Appropriate Bike
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">Time Taken
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+            </label>
+    </div>
+        </article>
+        <br>
+    </section>
+
+    <section class="Place">
+        <h1 id="Pre" class="top">Precautions</h1>
+        <article class="content">
+            <p class="center">Even though it may seem like the rules only apply to cars and pedestrians, there are also rules to follow
+                for bikers in
+                Montreal. There are also multiple precautions that you should take before biking around town. This
+                section will cover
+                both of those, to ensure that you will have a safe trip.</p>
+        </article>
+
+        
+        <h1 class="minitop">Safety</h1>
+        <article class="content">
+                <img class="img" src="../images/safety.jpg" alt="">
+                <p>Making sure that you are safe to bike around the area should be your number one
+                    priority before anything else. You need
+                    to see if the road is bumpy, the time of day that you will be biking, the surrounding area, etc. It
+                    is always
+                    recommended to wear a helmet that is not damaged, since a damaged helmet defeats the purpose of
+                    wearing one, which is to
+                    distribute the shock of the collision from your head to the helmet. Another good safety precaution
+                    is to invest in a
+                    bike lock. There will be times where you want to go inside a store, but you can not bring your bike.
+                    With a bike lock,
+                    you can leave it out there without risking someone taking it nonchalantly. One final thing that you
+                    should consider
+                    before leaving is the weather. Bad weather can cause the roads to be slippery, hence making it
+                    harder to bike on.</p>
+        </article>
+    </section>
+
+    <section class="Place">
+    <h1 id="lane" class="top">Bike Lanes</h1>
+    <article class="content">
+        <p class="center">Montreal is a great place to bike in overall. It has plenty of bike lanes available to cyclists inside the greater Montreal area and outside of Montreal, like in Laval, Brossard and Deux-Montagnes. The image below displays every bike lane in that designated area. Click on the image for more details.</p>
+        
+    </article>
+    <a id="wow" href="https://www.velo.qc.ca/en/toolkits/greater-montreal-bikeway-map/"><img class="mid" src="../images/carte.jpg" alt=""></a>
+    <br>
+    <h1>Source: Velo.Qc.Ca</h1>
+    <br>
     </section>
 </body>
+<img id="bike" src="../images/placeholder.webp" alt="">
+<footer>
+    <h3>Teehee! A Footer for my Bike :P</h3>
+</footer>
 </html>
