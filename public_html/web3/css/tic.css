@@ -1,0 +1,33 @@
+body{
+    text-align: center;
+    background-color: lightblue;
+}
+
+#grille {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 300px;
+}
+
+.case:hover{
+    background-color: cornsilk;
+    opacity: .5;
+}
+
+#grille .case {
+    background-color: cornflowerblue;
+    border: 1px solid rgb(0, 0, 0);
+    min-width: 100px;
+    min-height: 100px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+#replay {
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+}
