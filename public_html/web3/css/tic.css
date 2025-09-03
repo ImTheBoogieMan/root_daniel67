@@ -18,12 +18,13 @@ body{
 #grille .case {
     background-color: cornflowerblue;
     border: 1px solid rgb(0, 0, 0);
-    min-width: 100px;
-    min-height: 100px;
+    height: 10vmin;
+    width: 10vmin;
     display: grid;
     justify-content: center;
     align-items: center;
     font-size: 50px;
+    background-size: contain;
 }
 
 #replay {
