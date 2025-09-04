@@ -1,5 +1,8 @@
 let cases = document.querySelectorAll(".case");
 let Message = document.querySelector("#message");
+let MessageWinner = document.querySelector ("#message img");
+let Luffy = new Audio("../Sound/Luffy.mp3")
+let Usopp = new Audio("../Sound/Usopp.mp3")
 let replayBtn = document.querySelector("#replay");
 
 let PlayerX = true;
@@ -19,29 +22,31 @@ for (let boite of cases) {
     boite.addEventListener("click", function () {
         if (boite.active) {
             if (PlayerX) {
-                boite.innerText = "X";
+                boite.style.backgroundImage = "url('../img/Luffy.png')";
                 PlayerX = false;
+                Luffy.play()
             }
             else {
-                boite.innerText = "O";
+                boite.style.backgroundImage = "url('../img/Usopp.png')";
                 PlayerX = true;
+                Usopp.play()
+
             }
             boite.active = false;
         }
-        valide();
+        valide(); 
     });
 }
-
 const valide = function () {
     for (let patron of patrons) {
-        let val1 = cases[patron[0]].innerText;
-        let val2 = cases[patron[1]].innerText;
-        let val3 = cases[patron[2]].innerText;
+        let val1 = cases[patron[0]].style.backgroundImage.slice(5,23);
+        let val2 = cases[patron[1]].style.backgroundImage.slice(5,23);
+        let val3 = cases[patron[2]].style.backgroundImage.slice(5,23);
     
         if (val1 &&
             val1 === val2 &&
             val1 === val3) {
-            Message.innerText = (`The Winner is ${val1}`);
+            /*Message.innerText = (`The Winner is ${val1}`);*/
             for (let boite of cases) {
                 boite.active = false;
             }
@@ -52,8 +57,7 @@ const valide = function () {
 replayBtn.addEventListener("click", function() {
     for (let boite of cases) {
         boite.active = true;
-        boite.innerText = "";
+        boite.style.backgroundImage = "";
         PlayerX = true;
-        Message.innerText = "Ni Hao";
     }
 });

@@ -25,6 +25,8 @@ body{
     align-items: center;
     font-size: 50px;
     background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #replay {
@@ -32,3 +34,4 @@ body{
     padding: 10px;
     text-decoration: none;
 }
+
