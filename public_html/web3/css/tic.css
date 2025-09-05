@@ -4,9 +4,9 @@ body{
 }
 
 #grille {
-    margin: 0 auto;
+    margin: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns:1fr 1fr 1fr;
     max-width: 300px;
 }
 
@@ -18,8 +18,8 @@ body{
 #grille .case {
     background-color: cornflowerblue;
     border: 1px solid rgb(0, 0, 0);
-    height: 10vmin;
-    width: 10vmin;
+    height: 15vmin;
+    width: 15vmin;
     display: grid;
     justify-content: center;
     align-items: center;

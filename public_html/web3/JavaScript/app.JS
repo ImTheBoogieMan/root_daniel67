@@ -3,7 +3,8 @@ let Message = document.querySelector("#message");
 let MessageWinner = document.querySelector ("#message img");
 let Luffy = new Audio("../Sound/Luffy.mp3")
 let Usopp = new Audio("../Sound/Usopp.mp3")
-let replayBtn = document.querySelector("#replay");
+var Back = new Audio("../Sound/BackgroundMusic.mp3")
+let replayBtn = document.querySelector("#replay")
 
 let PlayerX = true;
 const patrons = [
